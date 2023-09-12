@@ -1,0 +1,96 @@
+<mat-drawer-container class="SuperContainer" autosize>
+    <mat-drawer #drawer class="Sidenav" mode="side">
+      <div class="content">
+        <div class="logoEzigna">
+          <img class="logoImg" src="../../../assets/img/logoLogin.png" alt="Logo">
+          <img class="logoLetras" src="../../../assets/img/letrasLogo.png" alt="EZigna">
+        </div>
+        <div class="options">
+          <div class="field dashboard">
+            <img src="../../../assets/img/DashboardCompleto.png" alt="Dashboard">
+            <!-- <h3>Dashboard</h3> -->
+          </div>
+          <div class="field agenda">
+            <img src="../../../assets/img/AgendaCompleto.png" alt="Agenda">
+            <!-- <h3>Agenda</h3> -->
+          </div>
+          <div class="field nuevoDocumento">
+            <img src="../../../assets/img/NuevoDocumentoCompleto.png" alt="Nuevo Documento">
+            <!-- <h3>Nuevo documento</h3> -->
+          </div>
+          <div class="field documentosProceso">
+            <img src="../../../assets/img/DocumentosProcesoCompleto.png" alt="Documentos en proceso">
+            <!-- <h3>Documentos en proceso</h3> -->
+          </div>
+          <div class="field documentosFirmados">
+            <img src="../../../assets/img/DocumentosFirmadosCompleto.png" alt="Documentos firmados">
+            <!-- <h3>Documentos firmados</h3> -->
+          </div>
+        </div>
+        <div class="profile">
+          <div class="profilePicture">
+            <img src="../../../assets/img/user.png" alt="Foto de Perfil">
+          </div>
+          <p>nombre empresa</p>
+          <img src="../../../assets/img/exit.png" alt="Salir">
+        </div>
+      </div>
+      
+    </mat-drawer>
+  
+    <div class="SidenavContent">
+        <div class="rightHeader">
+            <div>
+                <img class="icono" src="../../../assets/img/iconMenu.jpg" alt="hambuerguesa" (click)="drawer.toggle()">
+            </div>
+
+            <!-- <button class="iconoMenu" type="button" mat-button (click)="drawer.toggle()">
+                <img src="../../../assets/img/iconMenu.jpg" alt="hambuerguesa">
+            </button> -->
+            <div class="bienvenida">
+                <h1>Bienvenido Nombre de Usuario</h1>
+            </div>
+        </div>
+        <div class="fecha">
+            <p>{{ formattedDate}}</p>
+
+        </div>
+    </div>
+    <div class="titulo">
+        <h1>Información Personal</h1>
+    </div>
+    <div class="main">
+        <div class="left">
+            <div class="profileInfo">
+                <div class="profile-picture">
+                    <img src="../../../assets/img/user.png" alt="Foto de Perfil">
+                    <img class="cameraImg" src="../../../assets/img/camera.png" alt="Camara">
+                </div>
+                <h3>Nombre de Usuario</h3>
+                <p>correo@dominio.com</p>
+                <p>Nombre de la empresa</p>
+                <p>Cargo</p>
+            </div>
+            <div class="resendData col-8">
+                <div class="passwordUpdate">
+                    <img src="../../../assets/img/password.png" alt="Cambiar contraseña">
+                    <p>Actualizar constraseña</p>
+                </div>
+                <div class="accessData">
+                    <img src="../../../assets/img/data.png" alt="Reenviar datos de acceso">
+                    <p>Reenviar datos de acceso</p>
+                </div>
+            </div>
+        </div>
+        <div class="right">
+            <div class="mainHeader">
+                <h3>Validación de identidad</h3>
+            </div>
+            <div class="mainContent">
+                <p>Aún no has realizado tu validación de identidad, ¿Deseas realizarlo ahora?</p>
+                <img src="../../../assets/img/SI.png" alt="SI">
+            </div>
+        </div>
+    </div>
+  
+  </mat-drawer-container>

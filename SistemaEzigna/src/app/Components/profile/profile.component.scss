@@ -1,0 +1,207 @@
+.SuperContainer {
+    // width: 300px;
+    height: 100%;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+  }
+  
+  .Sidenav-content {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .Sidenav {
+    width: 20%;
+    padding: 20px;
+
+  }
+  .SidenavContent{
+    margin-top: 1%;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+  .rightHeader{
+    display: flex;
+    width: 100%;
+  }
+  .bienvenida h1{
+    color: #AA8C30;
+    font-size: xx-large;
+    align-self: center;
+    margin-left: 5%;
+  }
+  .fecha{
+    align-self: self-end;
+    align-content: end;
+    display: flex;
+    justify-content: flex-end;
+    align-content: end;
+    margin-right: 1%;
+  }
+  .fecha p{
+    font-weight: bold;
+    color:#9DA3A7;
+  }
+.icono{
+  position: absolute;
+  width: 2%;
+  // margin-top: .5%;
+  margin-left: 1%;
+}
+  .bienvenida{
+    width: 100%;
+  }
+  .titulo{
+    background-color: #C9AB53;
+    height: 7%;
+    display: flex;
+    align-items: center;
+  }
+  .titulo h1{
+    font-size: xx-large;
+    font-weight: bold;
+    color: black;
+    margin-top: 1%;
+    margin-left: 5%;
+  }
+  .main{
+    margin-top: 2%;
+  }
+  .content{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .logoEzigna{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .logoImg{
+    align-self: center;
+    width: 25%;
+  }
+  .logoLetras{
+    align-self: center;
+    width: 60%;
+  }
+  .options{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .field{
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 3%;
+    margin-bottom: 10%;
+    align-items: center;
+  }
+  .field img{
+    width: 70%;
+  }
+  // h3{
+  //   color:#0C8489;
+  //   font-weight: bold;
+  // }
+  .profile{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .profile p{
+    text-align: center;
+  }
+  .profilePicture {
+      display: flex;
+      justify-content: center;
+    }
+    .profilePicture img{
+      width: 50%;
+    }
+  .exit{
+    display: flex;
+    justify-content: center;
+  }
+
+  .main{
+    display: flex;
+    justify-content: space-evenly;
+    height: 70%;
+  }
+
+  .left{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 25%;
+    height: 100%;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+    background-color: rgba(140, 190, 191, 0.3)
+
+  }
+  .left h3, .left p{
+    text-align: center;
+  }
+  .left h3{
+    color:black;
+    font-weight: bolds;
+
+  }
+  .left p{
+    font-weight: 500;
+    color:#7C7B7B
+  }
+  .passwordUpdate,.accessData{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2%;
+    align-items: center;
+    align-content: center;
+  }
+  .passwordUpdate img, .accessData img{
+    height: 5%;
+  }
+  .profile-picture{
+    margin-top: 2%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+  }
+  .cameraImg {
+    position: absolute;
+    top:40%;
+    left:25%;
+
+  }
+  .right{
+    display: flex;
+    flex-direction: column;
+    // justify-content: space-between;
+    width: 60%;
+    height:20%;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+  }
+.mainHeader h3{
+  color: #C9AB53
+}
+.mainContent img{
+  width: 5%;
+  margin-left: 2%;
+  align-self: center;
+}
+.mainHeader,.mainContent{
+  margin-left: 3%;
+  display: flex;
+  align-content: center;
+  align-items: center;
+}
+.mainContent p{
+  align-self: center;
+}

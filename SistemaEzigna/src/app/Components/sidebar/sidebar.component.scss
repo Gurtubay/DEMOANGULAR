@@ -1,0 +1,134 @@
+
+.Sidenav {
+  max-width: 20%;
+  height: 100vh;
+}
+
+.toggle {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content:  center;
+  align-items: center;
+  padding: 25px 0;
+  &:hover {
+    cursor: pointer;
+  }
+}
+#menu{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.nav {
+
+
+  .active-link {
+    background-color: #fafafa;
+    border-left: solid 3px #1976d2;
+  }
+
+  .hover {
+    transition-duration: 400ms;
+    transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+    transition-property: transform, border, background-color;
+  }
+
+  mat-list-item,
+  a {
+    border: none;
+    box-sizing: border-box;
+    text-decoration: none;
+    &:hover {
+      cursor: pointer;
+      background-color: #fafafa;
+      border-left: solid 3px #1976d2;
+    }
+  }
+}
+mat-sidenav[style] {
+  visibility: visible !important;
+}
+.toggle{
+  height: 20%;
+}
+.toggle img{
+  height: 40%;
+}
+.logo{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+}
+.logo img{
+  height: 40%;
+}
+.mat-drawer {
+  transform: none !important;
+  visibility: visible !important;
+  display: block !important;
+}
+
+.content-container {
+  min-height: 100vh;
+  box-sizing: border-box;
+  padding: 25px;
+}
+
+
+.exit{
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  width: 20%;
+}
+
+.profilePicture {
+  height: 20%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.profilePicture p{
+  text-align: center;
+  vertical-align: middle;
+  align-self: center;
+}
+.profilePicture img{
+  align-self: center;
+  height: 80%;
+}
+.spaceContainer{
+  height: 80%;
+  // background-color: #1976d2;
+  // border: 2px black solid;
+}
+.field{
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  align-self: center;
+}
+.field p{
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  vertical-align: middle;
+}
+.field p span{
+  align-self: center;
+  vertical-align: middle;
+}
+.mat-list-item {
+  display: inline-flex; /* Usamos inline-flex en lugar de flex */
+  align-items: center;
+}
+mat-list-item {
+  display: inline-flex !important;
+  align-items: center;
+}

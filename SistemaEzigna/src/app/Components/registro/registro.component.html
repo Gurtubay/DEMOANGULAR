@@ -1,0 +1,63 @@
+<div class="body">
+    <div id="formulario">
+        <div class="logotipo">
+            <img id="imgLogo" src="../../../assets/img/logoLogin.png" alt="Logo Ezigna">
+            <img id="letrasLogo" src="../../../assets/img/letrasLogo.png" alt="Ezigna">
+        </div>
+        <form [formGroup]="form" (ngSubmit)="registrar()">
+            <div class="campo">
+                <label for="usuario">Usuario:</label>
+                <input type="text" autocomplete="off" id="usuario" name="usuario" formControlName="usuario" required>
+            </div>
+            <div class="campo">
+                <label for="password">Contraseña:</label>
+                <input type="password" autocomplete="off" id="password" name="password" formControlName="password" required>
+            </div>
+            <div class="campo">
+                <label for="nombre">Nombre:</label>
+                <input type="text"  id="nombre" name="nombre" formControlName="nombre" required>
+            </div>
+            <div class="campo">
+                <label for="correo">Correo Electrónico:</label>
+                <input type="email" id="correo" name="correo" formControlName="correo" required>
+            </div>
+            <div class="campo">
+                <label for="telefono col-2">Teléfono de Contacto:</label>
+                <input type="tel" id="telefono col-8" name="telefono" formControlName="telefono" required>
+            </div>
+            <div class="campo">
+                <label for="razon-social">Razón Social de Empresa:</label>
+                <input type="text" id="razon-social" name="razon-social" formControlName="razonSocial" required>
+            </div>
+            <div class="campo">
+                <label for="cargo">Cargo:</label>
+                <input type="text" id="cargo" name="cargo" formControlName="cargo" required>
+            </div>
+            <div class="btnSubmit">
+                <button type="submit">Registrarme</button>
+            </div>
+        </form>
+      </div>
+      <div class="footer">
+        <div class="btnAviso">
+            <p>Consulta nuestro aviso de privacidad</p>
+        </div>
+        <div>
+            <div class="socialMedia">
+                <a href="https://api.whatsapp.com/send?phone=5523052480" target="_blank">
+                    <img src="../../../assets/img/whats.png" alt="Whatsapp">
+                </a>
+                <a href="https://www.linkedin.com/company/e-zigna" target="_blank">
+                    <img src="../../../assets/img/link.png" alt="Linkedin">
+                </a>
+                <a href="https://www.facebook.com/EzignaMx/" target="_blank">
+                    <img src="../../../assets/img/face.png" alt="Facebook">
+                </a>
+            </div>
+            <div class="website">
+                <a href="https://ezigna.com/">ezigna.com</a>
+            </div>
+            
+        </div>
+    </div>  
+</div>

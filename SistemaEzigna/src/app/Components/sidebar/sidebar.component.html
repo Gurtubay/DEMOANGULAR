@@ -1,0 +1,69 @@
+<mat-sidenav-container class="SuperContainer" autosize>
+
+  <mat-sidenav #sidenav class="Sidenav" fixedInViewport="true" mode="over" [opened]="isExpanded">
+    <section id="menu" [class.sidebar]="isExpanded">
+      <div class="toggle" (click)="toggleMenu()">
+        <img src="../../../assets/img/logoLogin.png" alt="Ezigna">
+        <div class="logo" *ngIf="isExpanded" >
+          <img src="../../../assets/img/letrasLogo.png" alt="Ezigna">
+        </div>
+        <div class="logo" *ngIf="!isExpanded">
+        </div>
+      </div>
+
+      <mat-list class="nav" *ngFor="let route of routeLinks">
+        <div class="field">
+          <a  mat-list-item routerLinkActive="active-link" class="hover" [routerLink]="route.link">
+            <p><img [src]="route.icon" alt="{{ route.name }} Icon"> <!-- Utilizamos la propiedad icon para la ruta de la imagen -->
+            <span matLine *ngIf="isExpanded">{{ route.name }}</span></p>
+          </a>
+        </div>
+      </mat-list>
+      <div class="profilePicture" *ngIf="isExpanded">
+        <img src="../../../assets/img/user.png" alt="Foto de Perfil">
+        <p>nombre empresa</p>
+      </div>
+      <div class="profilePicture" *ngIf="!isExpanded">
+        <div class="spaceContainer"></div>
+      <br>
+      </div>
+      <div class="exit">
+        <img  src="../../../assets/img/exit.png" alt="Salir">
+      </div>
+    </section>
+    
+  </mat-sidenav>
+
+  <mat-sidenav-content [style.margin-left.px]="!isExpanded ? 60 : 250">
+    <div class="content-container">
+      <div class="SidenavContent">
+        <div class="rightHeader">
+            <div class="bienvenida">
+                <h1>Bienvenido Nombre de Usuario</h1>
+            </div>
+        </div>
+        <div class="fecha">
+            <p>{{ formattedDate}}</p>
+        </div>
+      </div>
+      <div class="mainContent">
+        <div class="counter">
+          <h4>Tu trabajo hasta ahora</h4>
+        </div>
+        <div class="graph">
+          <div style="display: block;">
+            <canvas
+              baseChart
+              [datasets]="pieChartData"
+              [labels]="pieChartLabels"
+              [options]="pieChartOptions"
+              [type]="pieChartType"
+            ></canvas>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+  </mat-sidenav-content>
+
+</mat-sidenav-container>

@@ -1,0 +1,60 @@
+<div class="body row">
+    <div class="mainElements">
+        <div class="fondo col-8">
+            <div>
+                <img src="../../../assets/img/leyendaLogin.png" alt="La herramienta más poderosa para validación de identidad y firma digital autógrafa.">
+            </div>
+            <div class="letrasLogo">
+                <img src="../../../assets/img/letrasLogo.png" alt="Ezigna">
+            </div>
+        </div>
+        <div class="login col-3">
+            <mat-spinner *ngIf="loading" class="spinner" diameter="50"></mat-spinner>
+            <div>
+                <img class="imgLogin" src="assets/img/logoLogin.png" alt="" width="50%">
+            </div>
+            <form *ngIf="!loading" [formGroup]="form" (ngSubmit)="ingresar()">
+              <div class="input-field">
+                <mat-form-field appearance="fill">
+                  <mat-label>Usuario</mat-label>
+                  <input matInput autocomplete="off" formControlName="usuario" placeholder="Usuario">
+                </mat-form-field>
+              </div>
+              <div class="input-field">
+                <mat-form-field appearance="fill">
+                  <mat-label>Contraseña</mat-label>
+                  <input type="password" matInput autocomplete="off" formControlName="password" placeholder="Contraseña">
+                </mat-form-field>
+              </div>
+              <br>
+              <button type="submit" class="ancho button" mat-raised-button [disabled]="form.invalid">Continuar</button>
+            </form>
+            <div class="registro">
+                <p>¿Aun no tienes cuenta?</p>
+                <p>Registrate <a href="/registro">aqui</a></p>
+            </div>
+          </div>
+    </div>
+    <div class="footer">
+        <div class="btnAviso">
+            <p>Consulta nuestro aviso de privacidad</p>
+        </div>
+        <div>
+            <div class="socialMedia">
+                <a href="https://api.whatsapp.com/send?phone=5523052480" target="_blank">
+                    <img src="../../../assets/img/whats.png" alt="Whatsapp">
+                </a>
+                <a href="https://www.linkedin.com/company/e-zigna" target="_blank">
+                    <img src="../../../assets/img/link.png" alt="Linkedin">
+                </a>
+                <a href="https://www.facebook.com/EzignaMx/" target="_blank">
+                    <img src="../../../assets/img/face.png" alt="Facebook">
+                </a>
+            </div>
+            <div class="website">
+                <a href="https://ezigna.com/">ezigna.com</a>
+            </div>
+            
+        </div>
+    </div>
+</div>    
